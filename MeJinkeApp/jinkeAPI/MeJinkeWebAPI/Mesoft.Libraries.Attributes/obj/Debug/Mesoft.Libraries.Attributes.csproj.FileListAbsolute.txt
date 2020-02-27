@@ -1,0 +1,6 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\bin\Debug\Mesoft.Libraries.Attributes.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\bin\Debug\Mesoft.Libraries.Attributes.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\obj\Debug\Mesoft.Libraries.Attributes.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\obj\Debug\Mesoft.Libraries.Attributes.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\obj\Debug\Mesoft.Libraries.Attributes.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Attributes\obj\Debug\Mesoft.Libraries.Attributes.pdb

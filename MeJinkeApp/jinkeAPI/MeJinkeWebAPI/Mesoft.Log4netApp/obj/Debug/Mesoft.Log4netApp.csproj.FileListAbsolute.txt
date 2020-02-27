@@ -1,0 +1,11 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\Mesoft.Log4netApp.exe.config
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\Mesoft.Log4netApp.exe
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\Mesoft.Log4netApp.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\log4net.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\log4net.xml
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\obj\Debug\Mesoft.Log4netApp.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\obj\Debug\Mesoft.Log4netApp.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\obj\Debug\Mesoft.Log4netApp.csproj.CopyComplete
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\obj\Debug\Mesoft.Log4netApp.exe
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\obj\Debug\Mesoft.Log4netApp.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Log4netApp\bin\Debug\log4net.cfg.xml

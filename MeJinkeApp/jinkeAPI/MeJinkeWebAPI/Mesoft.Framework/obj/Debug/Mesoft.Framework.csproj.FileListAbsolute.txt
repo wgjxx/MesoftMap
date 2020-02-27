@@ -1,0 +1,6 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\bin\Debug\Mesoft.Framework.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\bin\Debug\Mesoft.Framework.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\obj\Debug\Mesoft.Framework.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\obj\Debug\Mesoft.Framework.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\obj\Debug\Mesoft.Framework.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Framework\obj\Debug\Mesoft.Framework.pdb

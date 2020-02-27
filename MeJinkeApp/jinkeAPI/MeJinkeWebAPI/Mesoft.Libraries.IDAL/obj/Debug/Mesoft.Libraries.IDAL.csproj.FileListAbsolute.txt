@@ -1,0 +1,6 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\bin\Debug\Mesoft.Libraries.IDAL.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\bin\Debug\Mesoft.Libraries.IDAL.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\obj\Debug\Mesoft.Libraries.IDAL.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\obj\Debug\Mesoft.Libraries.IDAL.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\obj\Debug\Mesoft.Libraries.IDAL.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.IDAL\obj\Debug\Mesoft.Libraries.IDAL.pdb

@@ -1,0 +1,11 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Libraries.Factory.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Libraries.Factory.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Framework.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Libraries.IDAL.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Framework.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\bin\Debug\Mesoft.Libraries.IDAL.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\obj\Debug\Mesoft.Libraries.Factory.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\obj\Debug\Mesoft.Libraries.Factory.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\obj\Debug\Mesoft.Libraries.Factory.csproj.CopyComplete
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\obj\Debug\Mesoft.Libraries.Factory.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Libraries.Factory\obj\Debug\Mesoft.Libraries.Factory.pdb

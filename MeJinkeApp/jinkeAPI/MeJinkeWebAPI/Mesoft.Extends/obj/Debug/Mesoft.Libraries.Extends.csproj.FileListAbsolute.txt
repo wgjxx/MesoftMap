@@ -1,0 +1,11 @@
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Extends.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Extends.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Libraries.Attributes.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Libraries.IDAL.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Libraries.Attributes.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\bin\Debug\Mesoft.Libraries.IDAL.pdb
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\obj\Debug\Mesoft.Libraries.Extends.csprojAssemblyReference.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\obj\Debug\Mesoft.Libraries.Extends.csproj.CoreCompileInputs.cache
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\obj\Debug\Mesoft.Libraries.Extends.csproj.CopyComplete
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\obj\Debug\Mesoft.Extends.dll
+E:\Mesoft\jinkeAPI\MeJinkeWebAPI\Mesoft.Extends\obj\Debug\Mesoft.Extends.pdb

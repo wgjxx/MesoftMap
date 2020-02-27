@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<log4net>
+	<!-- Define some output appenders -->
+	<appender name="rollingAppender" type="log4net.Appender.RollingFileAppender">  
+    
+		<file value="log\log.txt" />
+
+		<!--追加日志内容-->
+		<appendToFile value="true" />
+
+		<!--防止多线程时不能写Log,官方说线程非安全-->
+		<lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+
+    <Encoding value="UTF-8"></Encoding>
+
+		<!--可以为:Once|Size|Date|Composite-->
+		<!--Composite为Size和Date的组合-->
+		<rollingStyle value="Size" />
+
+		<!--当备份文件时,为文件名加的后缀-->
+		<datePattern value="yyyyMMdd.TXT" />
+
+		<!--日志最大个数,都是最新的-->
+		<!--rollingStyle节点为Size时,只能有value个日志-->
+		<!--rollingStyle节点为Composite时,每天有value个日志-->
+		<maxSizeRollBackups value="8" />
+
+		<!--可用的单位:KB|MB|GB-->
+		<maximumFileSize value="2MB" />
+
+		<!--置为true,当前最新日志文件名永远为file节中的名字-->
+		<staticLogFileName value="true" />
+
+		<!--输出级别在INFO和ERROR之间的日志-->
+		<filter type="log4net.Filter.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="FATAL" />
+		</filter>
+
+    <!--日志输出格式-->
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date [%thread] %-5level %logger - %message%newline"/>
+		</layout>
+	</appender>
+  <appender name="ADONetAppender" type="log4net.Appender.ADONetAppender">
+
+    <!-- 日志缓存条数。如果为0则只要有一条数据就写入数据库 -->
+    <bufferSize value="1" />
+
+    <!-- 日志数据库连接类型 -->
+    <connectionType value="System.Data.SqlClient.SqlConnection,System.Data,Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+
+
+    <!-- 数据库连接字符串 -->
+    <connectionString value="Server=.\MSSqlServer2014;Database=CityService_KF;Trusted_Connection=True;MultipleActiveResultSets=true"  />
+
+    <!-- 日志数据库脚本 -->
+    <commandText value="INSERT INTO LogDetails ([LogDate],[LogLevel],[Thread],[Logger],[LogMessage])
+                 VALUES (@log_date,@log_level,@thread,@logger,@message)" />
+
+    <!--日志时间-->
+    <parameter>
+      <parameterName value="@log_date" />
+      <dbType value="DateTime" />
+      <layout type="log4net.Layout.RawTimeStampLayout" />
+    </parameter>
+    <!--日志级别-->
+    <parameter>
+      <parameterName value="@log_level" />
+      <dbType value="String" />
+      <size value="20" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%level" />
+      </layout>
+    </parameter>
+
+    <!--线程号-->
+    <parameter>
+      <parameterName value="@thread" />
+      <dbType value="String" />
+      <size value="100" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%thread" />
+      </layout>
+    </parameter>
+
+    <!--日志名称-->
+    <parameter>
+      <parameterName value="@logger" />
+      <dbType value="String" />
+      <size value="500" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%logger" />
+      </layout>
+    </parameter>
+
+    <!--日志内容-->
+    <parameter>
+      <parameterName value="@message" />
+      <dbType value="String" />
+      <size value="500" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%message" />
+      </layout>
+    </parameter>
+  </appender>
+  
+	<!-- levels: OFF > FATAL > ERROR > WARN > INFO > DEBUG  > ALL -->
+	<root>
+		<priority value="ALL"/>
+		<level value="ALL"/>
+		<appender-ref ref="ADONetAppender" />  <!--将日志信息写入文本文件，目前.net core好象不支持数据库-->
+	</root>
+</log4net>
