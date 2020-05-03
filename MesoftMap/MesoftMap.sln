@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MesoftMap", "MesoftMap\MesoftMap.csproj", "{C99AE02E-CAE0-4753-8697-F1CFCF2090CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesoft.MapAPP.Interface", "Mesoft.MapAPP.Interface\Mesoft.MapAPP.Interface.csproj", "{D7F2E2A1-EE3B-4D48-A419-27C505E8AEE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesoft.MapAPP.Services", "Mesoft.MapAPP.Services\Mesoft.MapAPP.Services.csproj", "{F601E09F-0FFA-4092-9491-C65AD76424AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesoft.MapAPP.EFModels", "Mesoft.MapAPP.EFModels\Mesoft.MapAPP.EFModels.csproj", "{6EF5AF64-E322-46E8-82E3-1A46A9B88C0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C99AE02E-CAE0-4753-8697-F1CFCF2090CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99AE02E-CAE0-4753-8697-F1CFCF2090CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99AE02E-CAE0-4753-8697-F1CFCF2090CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99AE02E-CAE0-4753-8697-F1CFCF2090CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F2E2A1-EE3B-4D48-A419-27C505E8AEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F2E2A1-EE3B-4D48-A419-27C505E8AEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F2E2A1-EE3B-4D48-A419-27C505E8AEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F2E2A1-EE3B-4D48-A419-27C505E8AEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F601E09F-0FFA-4092-9491-C65AD76424AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F601E09F-0FFA-4092-9491-C65AD76424AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F601E09F-0FFA-4092-9491-C65AD76424AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F601E09F-0FFA-4092-9491-C65AD76424AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF5AF64-E322-46E8-82E3-1A46A9B88C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF5AF64-E322-46E8-82E3-1A46A9B88C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF5AF64-E322-46E8-82E3-1A46A9B88C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF5AF64-E322-46E8-82E3-1A46A9B88C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F7478BC-8C8D-4B4E-AD3C-B89DD34D8D59}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <style type="text/css">
+        .loading {
+            z-index: 2000;
+            padding: 5px 0 5px 29px;
+            background: url(/images/loading_red.gif) no-repeat 10px top;
+            top: 50%;
+            left: 50%;
+            width: 90px;
+            position: fixed;
+            height: 21px;
+            margin-left: -45px;
+            margin-top: -10px;
+            display: block;
+        }
+    </style>
+</head>
+<body class="layui-layout-body" style="background-color:black">
+    <div id="showLoading" class="loading" style="display:none"></div>
+    <div class="layui-fluid" style="padding: 0px;">
+        <canvas id="particle"></canvas>
+        <br />
+        <div class="layui-form layui-form-pane layui-admin-login">
+            <div class="layui-admin-login-header">
+                <h1>登陆</h1>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><i class="layui-icon layui-icon-username"></i></label>
+                <div class="layui-input-block">
+                    <input name="userName" class="layui-input" type="text" placeholder="请输入账号" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><i class="layui-icon layui-icon-password"></i></label>
+                <div class="layui-input-block">
+                    <input name="passWord" class="layui-input" type="password" placeholder="请输入密码" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <input type="checkbox" pane name="remember" title="记住密码" lay-skin="primary">
+                @*<a href="javascript:;" style="margin-top: 10px;float: right;color: #009688;">忘记密码?</a>*@
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="loginxxx">
+                        <i class="layui-icon layui-icon-ok-circle"></i>登陆
+                    </button>
+                </div>
+                <div class="layui-btn-container" style="display:none;">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="register">
+                        <i class="layui-icon layui-icon-add-circle"></i>注册
+                    </button>
+                </div>
+            </div>
+            <!--底部-->
+            <div class="layui-footer"> ?http://service.mesoft.net/ 朝夕服务</div>
+        </div>
+    </div>
+    <script src="~/layui/layui.js"></script>
+    <script>
+
+        // 登录 需要做表单提交给后台，  或者数据收集之后提交给后台
+        layui.use(['layer', 'form'], function () {
+            var layer = layui.layer;
+            var form = layui.form,
+                $ = layui.jquery;
+
+            form.on("submit(loginxxx)", function (obj) {
+                $('#showLoading').show();
+                var user = obj.field;
+                var httpHost = window.location.protocol + '//' + window.location.host;
+                console.log('httpHost:', httpHost)
+                console.log("current user:", user);
+                $.ajax({
+                    type: 'Get',
+                    data: { id: user.userName, pass: user.passWord },
+                    url: httpHost + '/api/Operator/Login',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",//表示后台返回的数据是json对象
+                    success: function (result) {
+                        console.log("ajax success:", result);
+                        var jsonResult = result; // JSON.parse(result);
+                        if (jsonResult.codeId > 0) {
+
+                            //localStorage.setItem("apiTicket", apiTiket)
+                            layer.msg(jsonResult.errMessage, { icon: 1 });
+                            window.location.href = "/home/Index";
+                        }
+                        else {
+                            $('#showLoading').hide();
+                            layer.msg(jsonResult.errMessage, { icon: 2 });
+                        }
+                    }
+                })
+            })
+
+            form.on("submit(register)", function (obj) {
+                window.location.href = "/home/register";
+            });
+
+        })
+    </script>
+</body>
+</html>

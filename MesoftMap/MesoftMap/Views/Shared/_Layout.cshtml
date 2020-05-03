@@ -1,0 +1,128 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>@ViewData["Title"] - 朝夕软件</title>
+    <style type="text/css">
+
+        .horizon-center {
+            position: absolute;
+            left: 50%;
+            width: 200px;
+            margin-left: -50px;
+        }
+
+        .vertical-center {
+            position: absolute;
+            top: 50%;
+            height: 100px;
+            margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="~/css/colorPicker/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/colorPicker/default.css">
+    <link rel="stylesheet" type="text/css" href="~/css/colorPicker/jquery.classycolor.min.css" />
+    <link rel="stylesheet" href="~/layui/css/layui.css">
+    <script src="~/js/Vue/jquery-2.2.2.min.js"></script>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout-admin">
+        <div id="mesoft-header" class="layui-header">
+            <div class="layui-logo">朝夕地图应用</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="/home">首页</a></li>
+                <li class="layui-nav-item"><a asp-area="" asp-controller="Home" asp-action="Privacy">隐私声明</a></li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                @{if (User.Identity.IsAuthenticated @*!= null && User.Claims.Count()>0*@)
+{
+<li class="layui-nav-item">
+    <a href="javascript:;">
+
+        @{
+            <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+            var claims = User.Claims.ToList();
+            string name = claims.FirstOrDefault().Value;
+            <label>@name</label>
+        }
+    </a>
+    <dl class="layui-nav-child">
+        <dd><a href="">基本资料</a></dd>
+        <dd><a href="">安全设置</a></dd>
+    </dl>
+</li>
+<li class="layui-nav-item"><a id="login" href="javascript:;">退了</a></li>
+}
+else
+{
+<li class="layui-nav-item"><a href="/home/login">登录</a></li>
+}
+                }
+
+            </ul>
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <!-- 底部固定区域 -->
+        <div id="mesoft-footer" class="layui-footer">
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2020 service.mesoft.net - Mesoft Map Application - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    <div style="float:right;" id="latLng"></div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script src="~/layui/layui.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+        $('#login').click(function (e) {
+
+            $.ajax({
+                type: 'Get',
+                //data: { id: user.userName, pass: user.passWord },
+                url: '/api/Operator/Logout',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",//表示后台返回的数据是json对象
+                success: function (result) {
+                    console.log("ajax success:", result);
+
+                    var jsonResult = result; // JSON.parse(result);
+                    if (jsonResult.codeId > 0) {
+                        alert('成功退出登录！')
+                        window.location.href = "/home/login";
+                    }
+                    else {
+                        layer.msg(jsonResult.errMessage, { icon: 2 });
+                    }
+                }
+            })
+        })
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

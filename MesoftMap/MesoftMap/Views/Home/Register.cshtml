@@ -1,0 +1,100 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body class="layui-layout-body" style="background-color:black">
+    <div class="layui-fluid" style="padding: 0px;">
+        <canvas id="particle"></canvas>
+        <br />
+        <div class="layui-form layui-form-pane layui-admin-login">
+            <div class="layui-admin-login-header">
+                <h1>注册</h1>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号：</label>
+                <div class="layui-input-block">
+                    <input required lay-verify="required" name="userName" class="layui-input" type="text" placeholder="请输入账号" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">姓名：</label>
+                <div class="layui-input-block">
+                    <input required lay-verify="required" name="nickName" class="layui-input" type="text" placeholder="请输入姓名" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码：</label>
+                <div class="layui-input-block">
+                    <input required lay-verify="required" name="passWord" class="layui-input" type="password" placeholder="请输入密码" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码确认：</label>
+                <div class="layui-input-block">
+                    <input required lay-verify="required" name="confirmPassWord" class="layui-input" type="password" placeholder="确认密码" autocomplete="off" />
+                </div>
+            </div>
+            <div class="layui-form-item">                
+                <div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="register">
+                        <i class="layui-icon layui-icon-add-circle"></i>注册
+                    </button>
+                </div>
+            </div>
+            <!--底部-->
+            <div class="layui-footer"> ?http://service.mesoft.net/ 朝夕服务</div>
+        </div>
+    </div>
+    <script src="~/layui/layui.js"></script>
+    <script>
+
+        // 登录 需要做表单提交给后台，  或者数据收集之后提交给后台
+        layui.use(['layer', 'form'], function () {
+            var layer = layui.layer;
+            var form = layui.form,
+                $ = layui.jquery;
+
+            form.on("submit(register)", function (obj) {
+                var user = obj.field;
+                if (user.passWord !== user.confirmPassWord) {
+                    layer.msg('密码不一致！', { icon: 2 });
+                    return;
+                }
+
+                var httpHost = window.location.protocol + '//' + window.location.host;
+                console.log('httpHost:', httpHost)
+                console.log("current user:", user);
+                $.ajax({
+                    type: 'Get',
+                    data: { id: user.userName, name:user.nickName, pass: user.passWord},
+                    url: httpHost + '/api/Operator/Register',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",//表示后台返回的数据是json对象
+                    success: function (result) {
+                        console.log("ajax success:", result);
+                        var jsonResult = result; // JSON.parse(result);
+                        if (jsonResult.codeId>0) {   //注册成功
+                            var apiTiket = jsonResult.Ticket;
+                            //localStorage.setItem("apiTicket", apiTiket)
+                            layer.msg(jsonResult.errMessage, { icon: 1 });
+                            window.location.href = "/home/Index";
+                        }
+                        else {
+                            layer.msg(jsonResult.errMessage, { icon: 2 });
+                        }
+                    }
+                })
+            })
+
+        })
+    </script>
+</body>
+</html>

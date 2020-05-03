@@ -1,0 +1,12 @@
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.deps.json
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.pdb
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\bin\Release\netcoreapp3.1\Mesoft.MapAPP.EFModels.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\bin\Release\netcoreapp3.1\Mesoft.MapAPP.EFModels.pdb
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.csprojAssemblyReference.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.csproj.CoreCompileInputs.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.AssemblyInfoInputs.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.AssemblyInfo.cs
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.csproj.CopyComplete
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Interface\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.pdb

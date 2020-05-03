@@ -1,0 +1,14 @@
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Services.deps.json
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Services.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Services.pdb
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.EFModels.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.EFModels.pdb
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\bin\Release\netcoreapp3.1\Mesoft.MapAPP.Interface.pdb
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.csprojAssemblyReference.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.csproj.CoreCompileInputs.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.AssemblyInfoInputs.cache
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.AssemblyInfo.cs
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.csproj.CopyComplete
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.dll
+E:\GitHub\MesoftMap\Mesoft.MapAPP.Services\obj\Release\netcoreapp3.1\Mesoft.MapAPP.Services.pdb
